@@ -241,11 +241,21 @@ config KHADAS_VIM4
 	help
 	  Select Khadas VIM4 config
 
+config CORELAB_TVPRO
+	bool "CoreLab TVPro"
+	select TARGET_CORELAB_TVPRO
+	help
+	  Select CoreLab TVPro config
+
 endchoice
 
 config TARGET_KHADAS_VIM4
 	bool "Khadas VIM4 board"
 	depends on KHADAS_VIM4
+
+config TARGET_CORELAB_TVPRO
+	bool "CoreLab TVPro board"
+	depends on CORELAB_TVPRO
 
 endif
 
@@ -294,4 +304,5 @@ endif
 # Khadas boards
 
 source "board/khadas/kvim4/Kconfig"
+source "board/khadas/tvpro/Kconfig"
 source "board/khadas/kvim1s/Kconfig"

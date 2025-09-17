@@ -87,6 +87,9 @@ SOC		=	$(shell echo ${PLAT} | cut -d '_' -f 1)
 ifeq ($(SOC),kvim4)
 SOC     =   t7
 endif
+ifeq ($(SOC),tvpro)
+SOC     =   t7
+endif
 ifeq ($(SOC),kvim1s)
 SOC     =   s4
 endif
