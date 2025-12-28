@@ -427,7 +427,6 @@
             "run check_display;"\
             "run storeargs;"\
             "run reset_suspend;"\
-            "run upgrade_key;"\
             "run switch_bootmode;"
 
 #ifndef CONFIG_HDMITX_ONLY
